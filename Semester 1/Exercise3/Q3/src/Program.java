@@ -1,0 +1,24 @@
+
+public class Program {
+	public static void main(String[] args) {
+		Rational r1 = new Rational(20,8);
+		Rational r2 = new Rational(6);
+		Rational r3 = new Rational(12,18);
+		Rational r4 = new Rational();
+		r4.readRational();
+		r1.fractionReduction();
+		r2.fractionReduction();
+		r3.fractionReduction();
+		r4.fractionReduction();
+		r1.show();
+		r2.show();
+		r3.show();
+		r4.show();
+		System.out.println(r1.rationalDecimal());
+		System.out.println(r2.rationalDecimal());
+		System.out.println(r3.rationalDecimal());
+		System.out.println(r4.rationalDecimal());
+		
+		
+	}
+}

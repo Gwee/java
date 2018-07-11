@@ -1,0 +1,4 @@
+1450631381075	Move compilation unit
+1450720604338	Rename local variable 'result'
+1451049126159	Extract method 'checkTenValues'
+1451049424437	Rename method 'checkTenValues'

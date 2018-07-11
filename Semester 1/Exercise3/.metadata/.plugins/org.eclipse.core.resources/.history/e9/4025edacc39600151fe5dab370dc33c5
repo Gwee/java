@@ -1,0 +1,10 @@
+
+public class Calculator {
+
+	public Calculator(){
+		
+	}
+	public double power(int a, int b){
+		return Math.pow(5, 2);
+	}
+}

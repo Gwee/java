@@ -1,0 +1,8 @@
+
+public class Program {
+	public static void main (String [] args){
+		StraightLine Line1 = new StraightLine(5,5);
+		System.out.println(Line1.slope());
+		System.out.println(Line1.isOnLine(5, 5));
+	}
+}

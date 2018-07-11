@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Program {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter 3 numbers for the quadratic function");
+		int[] arr = new int[3];
+		int i=0;
+		while (i <arr.length) {
+			switch (i) {
+			case 0:
+				System.out.println("Please enter the A: ");
+				arr[i] = scan.nextInt();
+				i++;
+				break;
+			case 1:
+				System.out.println("Please enter the B: ");
+				arr[i] = scan.nextInt();
+				i++;
+				break;
+			case 2:
+				System.out.println("Please enter the C: ");
+				arr[i] = scan.nextInt();
+				i++;
+				break;
+			}
+		}
+		
+		QuadFun newQuad = new QuadFun(arr[0], arr[1], arr[2]);
+		newQuad.show();
+		newQuad.solve();
+		i=0;
+		int number=1;
+		int[] arr2 = new int[10];
+		System.out.println("Please enter 10 numbers to be evaluated");
+		while (i<arr2.length) {
+			number = i+1;
+			System.out.println("Please enter Number "+number);
+			arr2[i] = scan.nextInt();
+			i++;
+		}
+		scan.close();
+	}
+}

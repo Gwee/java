@@ -1,0 +1,38 @@
+
+public class QuadFun {
+	double a,b,c;
+	public QuadFun(int ax, int bx, int cx ){
+		if (ax == 0) {
+			System.out.println("Cannot have 0 as ax, changing value to 1");
+			this.a=1;
+			this.b = bx;
+			this.c = cx;
+		} else{
+		this.a = ax;
+		this.b = bx;
+		this.c = cx;
+		}
+	}
+	public QuadFun(int bx, int cx){
+		this(1,bx,cx);
+	}
+	public QuadFun(){
+		this(1,1,1);
+	}
+	public void show(){
+		if (b==0) {
+			System.out.println("f(x)="+a+"x^2 + "+c);
+		}
+		if (c==0) {
+			System.out.println("f(x)="+a+"x^2 + "+b+"x");
+		}else{
+		System.out.println("f(x)="+a+"x^2 + "+b+"x + "+c);
+		}
+	}
+	public void solve(){
+		double x1, x2;
+		x1 = -(this.b) + Math.sqrt(Math.pow(this.b, 2)-4*this.a*this.c) / 2*this.a; 
+		x2 = -(this.b) - Math.sqrt(Math.pow(this.b, 2)-4*this.a*this.c) / 2*this.a;  
+	}
+	
+}

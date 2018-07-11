@@ -1,0 +1,26 @@
+
+public class StraightLine {
+	private int lineX1,lineX2,lineY1,lineY2;
+	private float slope;
+	
+	public StraightLine(int x1, int y1){
+		lineX1=x1;
+		lineY1=y1;
+		lineX2=0;
+		lineY2=0;
+	}
+	public StraightLine(int x1, int y1, int x2, int y2){
+		lineX1=x1;
+		lineY1=y1;
+		lineX2=x2;
+		lineY2=y2;
+	}
+	public float slope(){
+		slope = (lineY2 - lineY1) / (lineX2 - lineX1);
+		return slope;
+	}
+	public boolean isOnLine(int x, int y){	
+		return lineY1 - y == slope*lineX1 - x;
+		
+	}
+}

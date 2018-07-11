@@ -1,0 +1,13 @@
+
+public class Program {
+	
+	public static void main(String[] args) {
+		Vehicle car1 = new Vehicle(12345);
+		Vehicle car2 = new Vehicle(12346);
+		car1.accelerate(5);
+		car2.accelerate();
+		System.out.println("Current speed of car1 is "+car1.getCurrentSpeed() +" km/h");
+		
+		
+	}
+}

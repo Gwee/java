@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Program {
+	public static void main (String[] args){
+		System.out.println(Calculator.approximateTwo(4));
+		System.out.println(Calculator.approximateE(4));
+		int n;
+		int counter=0;
+		double diffE=0;
+		double diffTwo=0;
+		int arr[] = new int[10];
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter 10 numbers");
+		while (counter <arr.length) {
+			System.out.println("Number "+(counter+1)+": ");
+			n = scan.nextInt();
+			arr[counter]= n;
+			diffE = Calculator.approximateE(n) - Math.E;
+			diffTwo = Calculator.approximateTwo(n) - 2;
+			System.out.println("DiffE="+diffE+", approximateE="+Calculator.approximateE(n)+", DiffTwo="+diffTwo+", approximateTwo="+Calculator.approximateTwo(n)+", n="+n);
+			counter++;
+		}
+	}
+}

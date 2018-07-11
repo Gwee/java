@@ -1,0 +1,23 @@
+
+public class Program {
+	static int requiredSpeed;
+	public static void main(String[] args) {
+		Vehicle car1 = new Vehicle(12345);
+		Vehicle car2 = new Vehicle(12346, 60);
+		car1.accelerate(5);
+		car2.accelerate();
+		System.out.println("Current speed of car1 is "+car1.getCurrentSpeed() +" km/h");
+		if(car2.getCurrentSpeed() >= 30){
+			requiredSpeed = car2.getCurrentSpeed() - 30;
+			car2.decelerate(requiredSpeed);
+		}
+		if(car2.getCurrentSpeed() <= 30){
+			requiredSpeed = 30 - car2.getCurrentSpeed();
+			car2.accelerate(requiredSpeed);
+		}
+			
+		System.out.println("Current speed of car2 is "+car2.getCurrentSpeed() +" km/h");
+		
+		
+	}
+}

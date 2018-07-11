@@ -1,0 +1,21 @@
+
+public class Calculator {
+
+	public Calculator(){	
+	}
+	
+	public double power(int a, int b){
+		return Math.pow(5, 2);
+	}
+	
+	public int sumDigits(int a){
+		int digit; 
+		int sum=0;
+		while (a>0) {
+			digit = a%10;
+			a=a/10;
+			sum = sum+digit;
+		}
+		return sum;
+	}
+}

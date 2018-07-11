@@ -1,0 +1,38 @@
+
+public class Calculator {
+
+	public Calculator(){	
+	}
+	
+	public double power(int a, int b){
+		return Math.pow(5, 2);
+	}
+	
+	public int sumDigits(int a){
+		int digit; 
+		int sum=0;
+		while (a>0) {
+			digit = a%10;
+			a=a/10;
+			sum = sum+digit;
+		}
+		return sum;
+	}
+	
+	public int maxDigit(int a){
+		int digit1, digit2;
+		int max=0;
+		while (a>0) {
+			digit1 = a%10;
+			a=a/10;
+			digit2 = a%10;
+			if (digit1< digit2) {
+				max = digit1;
+			}
+			else {
+				max = digit2;
+			}
+		}
+		return max;
+	}
+}

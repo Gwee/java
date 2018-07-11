@@ -1,0 +1,6 @@
+1448175440273	Rename local variable 'point1'
+1448175451906	Rename local variable 'point2'
+1448181815631	Extract local variable 'parallels'
+1448182211064	Extract local variable 'slope1'
+1448182225868	Extract local variable 'slope2'
+1448189594699	Extract method 'test'

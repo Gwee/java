@@ -1,0 +1,9 @@
+
+public class Program {
+
+	public static void main(String[] args) {
+		Calculator guy = new Calculator();
+		guy.power(5, 2);
+	}
+
+}

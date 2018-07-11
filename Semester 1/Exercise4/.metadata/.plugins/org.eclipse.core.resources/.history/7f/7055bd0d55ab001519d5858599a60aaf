@@ -1,0 +1,9 @@
+
+public class Program {
+	public static void main(String[] args) {
+		QuadFun quad = new QuadFun(1, 6, 4);
+		quad.solve();
+	}
+	
+
+}

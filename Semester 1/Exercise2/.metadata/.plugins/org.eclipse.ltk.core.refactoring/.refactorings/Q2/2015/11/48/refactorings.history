@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;car2Speed&apos; from expression &apos;car2.getCurrentSpeed()&apos;&#x0A;- Original project: &apos;Q2&apos;&#x0A;- Variable name: &apos;car2Speed&apos;&#x0A;- Destination method: &apos;Program.main()&apos;&#x0A;- Variable expression: &apos;car2.getCurrentSpeed()&apos;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;car2Speed&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;{Program.java" name="car2Speed" replace="true" selection="302 22" stamp="1448187399814" version="1.0"/>
+</session>

@@ -1,0 +1,11 @@
+
+public class Program {
+	
+	public static void main(String[] args) {
+		Vehicle car1 = new Vehicle(12345);
+		Vehicle car2 = new Vehicle(12346);
+		Vehicle testCar = new Vehicle(123,90);
+		
+		
+	}
+}

@@ -1,0 +1,12 @@
+
+public class Program {
+
+	public static void main(String[] args) {
+		Calculator guy = new Calculator();
+		System.out.println(guy.power(5, 2));
+		System.out.println(guy.sumDigits(2242));
+		System.out.println(guy.maxDigit(78570329));
+		System.out.println(guy.symmetric(1221));
+	}
+
+}

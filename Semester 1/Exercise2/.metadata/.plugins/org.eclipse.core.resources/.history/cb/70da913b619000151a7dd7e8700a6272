@@ -1,0 +1,44 @@
+
+public class Car {
+	private int carLicenseNumber;
+	private int carCurrentSpeed, carMaximumSpeed;
+	
+	public Car (){
+	carCurrentSpeed=0;
+	}
+	public Car(int licenseNumber, int maximumSpeed){
+		carCurrentSpeed=0;
+		carLicenseNumber=licenseNumber;
+		if (maximumSpeed>=100){
+			carMaximumSpeed=100;
+		}
+		carMaximumSpeed=maximumSpeed;
+	}
+	public void accelerate(){
+		if (carCurrentSpeed + 1 >= carMaximumSpeed){
+			carCurrentSpeed=carMaximumSpeed;
+		}
+		carCurrentSpeed=carCurrentSpeed+1;
+	}
+	public void accelerate(int speed){
+		if (carCurrentSpeed + speed >= carMaximumSpeed){
+			carCurrentSpeed=carMaximumSpeed;
+		}
+		carCurrentSpeed=carCurrentSpeed+speed;
+	}
+	public void decelerate(){
+		if (carCurrentSpeed - 1 <= 0){
+			carCurrentSpeed=0;
+		}
+		carCurrentSpeed=carCurrentSpeed-1;
+	}
+	public void decelerate(int speed){
+		if (carCurrentSpeed - speed <= 0){
+			carCurrentSpeed=0;
+		}
+		carCurrentSpeed=carCurrentSpeed-speed;
+	}
+	public int returnCurrentSpeed(){
+		return carCurrentSpeed;
+	}
+}

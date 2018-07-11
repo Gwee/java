@@ -1,0 +1,16 @@
+
+public class Program {
+	public static void main (String [] args){
+		StraightLine Line1 = new StraightLine(5,5,2,2);
+		StraightLine Line2 = new StraightLine(4,8);
+		if (Line2.isOnLine(0,0) == true){
+			System.out.println("Line2 is on the origin!");	
+		}
+		else{
+		System.out.println("Line2 is not on the origin!");
+		}
+		if (Line1.slope() != Line2.slope()){
+			System.out.println("test");
+		}
+	}
+}

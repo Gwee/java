@@ -1,0 +1,7 @@
+
+public class Program {
+	public static void main (String[] args){
+		Calculator guy = new Calculator();
+		System.out.println(guy.approximateTwo(4));
+	}
+}

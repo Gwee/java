@@ -1,0 +1,31 @@
+
+public class Program {
+	public static void main (String [] args){
+		StraightLine Line1 = new StraightLine(5,5,2,2);
+		StraightLine Line2 = new StraightLine(4,8);
+		boolean originInOnLine = Line2.isOnLine(0,0);
+		if (originInOnLine == true){
+			System.out.println("Line2 is on the origin");	
+		}
+		else{
+			System.out.println("Line2 is not on the origin");
+		}
+
+		double slope1 = Line1.slope();
+		double slope2 = Line2.slope();
+
+		boolean parallels = slope1 == slope2;
+		if (parallels){
+			System.out.println("Line1 and Line2 are parellel to each other");
+		} else if (slope1 != 0){
+			if (-1/slope1==slope2){
+				System.out.println("Line1 and Line2 are perpendicular to each other");	
+			}
+		} else if (slope2 == -1){
+			System.out.println("Line1 and Line2 are perpendicular to each other");				
+		}
+		else {
+			System.out.println("Line1 and Line2 cross each other");
+		}
+	}
+}
