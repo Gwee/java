@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 9, Time elapsed: 10.852 sec <<< FAILURE!
+handleTestMethodName(com.intigua.applitools.LoginPageTest)  Time elapsed: 1.397 sec  <<< FAILURE!
+com.applitools.eyes.EyesException: com.applitools.eyes.EyesException: A test is already running
+	at com.intigua.applitools.IntiguaApplitoolsDriver.initTest(IntiguaApplitoolsDriver.java:74)
+	at com.intigua.applitools.LoginPageTest.handleTestMethodName(LoginPageTest.java:20)
